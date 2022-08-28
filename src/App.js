@@ -6,7 +6,7 @@ const BASE_URL = 'https://api.exchangerate.host/latest'
 
 
 function App() {
-
+// Option
   const [currencyOptions, setCurrencyOptions] = useState([])
 
   useEffect(() => {
