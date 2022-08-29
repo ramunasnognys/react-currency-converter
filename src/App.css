@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     margin: 0;
     display: flex;
@@ -5,34 +11,12 @@ body {
     align-items: center;
     min-height: 100vh;
     text-align: center;
-    }
-    
-    h1 {
-        margin: 0;
-        margin-bottom: .5rem;
-    }
-    
-    .input {
-        border: 1px solid #333;
-        border-radius: .3em;
-        padding: .25rem;
-        width: 7em;
-    }
-    /*  */
-    select {
-        margin-left: 0.5rem;
-    }
-    
-    .equals {
-        font-weight: bold;
-        font-size: 2rem;
-    }
+}
 
-    .flex {
-        display: flex;
-        gap: 1rem;
-    }
-
-    .color {
-        
-    }
+.container {
+    max-width: 1660px;
+    margin: 0 auto;
+    border: 1px solid;
+    display: grid;
+    place-items: center;
+}
