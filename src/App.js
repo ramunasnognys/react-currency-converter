@@ -55,7 +55,6 @@ function App() {
   return (
     <>
       <h1>Valiutos skaičiuoklė</h1>
-      <div className=" flex">
       <CurrencyRow
         currencyOptions={currencyOptions}
         selectedCurrency={fromCurrency}
@@ -71,7 +70,6 @@ function App() {
         onChangeAmount={handleToAmountChange}
         amount={toAmount}
       />
-      </div>
 
     </>
   );
