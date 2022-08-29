@@ -21,10 +21,18 @@ body {
     
     select {
         margin-left: 0.5rem;
-    
     }
     
     .equals {
         font-weight: bold;
         font-size: 2rem;
+    }
+
+    .flex {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .color {
+        
     }

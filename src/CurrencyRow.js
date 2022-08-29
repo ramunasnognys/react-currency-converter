@@ -17,6 +17,7 @@ export default function CurrencyRow(props) {
                 <option key={option} value={option}>{option}</option>
             ))}
         </select>
+        <div value={selectedCurrency}></div>
     </div>
   )
 }
