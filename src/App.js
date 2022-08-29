@@ -27,9 +27,12 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         const firstCurrency = Object.keys(data.rates)[0];
+        const secondCurrency = Object.keys(data.rates)[40];
+
         setCurrencyOptions([data.base, ...Object.keys(data.rates)]);
+        
         setFromCurrency(data.base);
-        setToCurrency(firstCurrency);
+        setToCurrency(secondCurrency);
         setExchangeRate(data.rates[firstCurrency]);
       });
   }, []);
