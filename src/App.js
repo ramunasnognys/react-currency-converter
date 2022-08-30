@@ -28,7 +28,6 @@ function App() {
       .then((data) => {
         const firstCurrency = Object.keys(data.rates)[0];
         const secondCurrency = Object.keys(data.rates)[40];
-
         setCurrencyOptions([data.base, ...Object.keys(data.rates)]);
         
         setFromCurrency(data.base);
@@ -73,7 +72,6 @@ function App() {
         onChangeAmount={handleToAmountChange}
         amount={toAmount}
       />
-
     </>
   );
 }
