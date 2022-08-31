@@ -12,6 +12,7 @@ function App() {
   const [amount, setAmount] = useState(1)
   const [amountInFromCurrency, setAmountInFromCurrency] = useState(true)
 
+
   let toAmount, fromAmount
   if (amountInFromCurrency) {
     fromAmount = amount
@@ -25,12 +26,11 @@ function App() {
     fetch(BASE_URL)
       .then(res => res.json())
       .then(data => {
-        const firstCurrency = Object.keys(data.rates)[0]
+        const firstCurrency = Object.keys(data.rates)[40]
         setCurrencyOptions([data.base, ...Object.keys(data.rates)])
         setFromCurrency(data.base)
         setToCurrency(firstCurrency)
         setExchangeRate(data.rates[firstCurrency])
-
       })
   }, [])
 
@@ -51,7 +51,6 @@ function App() {
     setAmount(e.target.value)
     setAmountInFromCurrency(false)
   }
-console.log(currencyOptions[41]);
 
   return (
     <>
