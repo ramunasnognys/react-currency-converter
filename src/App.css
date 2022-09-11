@@ -61,15 +61,13 @@ body {
     @media only screen and (max-width: 600px) {
       
         .input {
-            font-size: 2rem;
+            font-size: 1.5rem;
             background-color: #333;
         }
 
         .container {
             background: rgba(184, 164, 195, 0.133);
             padding: 1rem;
-            /* width: 100px; */
-            /* display: flex; */
             margin: 10px;
             flex: 2 1 auto;
 
@@ -80,7 +78,7 @@ body {
             font-weight: bold;
             color: inherit;
             margin-left: 1rem;
-            padding:0 1rem;
+            padding:0 .5rem;
         }
 
         h1 {
