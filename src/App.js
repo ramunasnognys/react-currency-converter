@@ -21,7 +21,7 @@ function App() {
     toAmount = amount
     fromAmount = amount / exchangeRate
   }
-
+console.log(exchangeRate);
   useEffect(() => {
     fetch(BASE_URL)
       .then(res => res.json())
