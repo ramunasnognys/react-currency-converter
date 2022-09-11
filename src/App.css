@@ -17,6 +17,9 @@ body {
         border-radius: .3em;
         padding: .25rem;
         width: 7em;
+        background-color: #333;
+        color: aliceblue;
+        font-size: inherit;
     }
     /*  */
     select {
@@ -26,6 +29,13 @@ body {
     .equals {
         font-weight: bold;
         font-size: 2rem;
+        border: 3px solid black;
+
+    }
+
+    .container {
+        background: blue;
+        
     }
 
     .flex {
@@ -33,6 +43,4 @@ body {
         gap: 1rem;
     }
 
-    .color {
-        
-    }
+  

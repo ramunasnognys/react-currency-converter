@@ -63,7 +63,7 @@ console.log(exchangeRate);
         amount={fromAmount}
       />
       <div className="equals">=</div>
-      <CurrencyRow
+      <CurrencyRow className="container"
         currencyOptions={currencyOptions}
         selectedCurrency={toCurrency}
         onChangeCurrency={e => setToCurrency(e.target.value)}
