@@ -54,7 +54,7 @@ console.log(exchangeRate);
 
   return (
     <>
-      <h1>Convert</h1>
+      <h1>DDK/EUR <span >CONVERTER</span></h1>
       <CurrencyRow
         currencyOptions={currencyOptions}
         selectedCurrency={fromCurrency}
@@ -63,7 +63,7 @@ console.log(exchangeRate);
         amount={fromAmount}
       />
       <div className="equals">=</div>
-      <CurrencyRow className="container"
+      <CurrencyRow
         currencyOptions={currencyOptions}
         selectedCurrency={toCurrency}
         onChangeCurrency={e => setToCurrency(e.target.value)}
